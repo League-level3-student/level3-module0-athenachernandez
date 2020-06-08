@@ -8,6 +8,12 @@ public class MoreArrayFun {
 
 	// 1. Create a main method to test the other methods you write.
 	public static void main(String[] args) {
+		int[] arr = new int[5];
+		for(int i = 0; i < arr.length; i++){
+		  arr[i] = i;
+		}
+		System.out.println(arr[5]);
+		
 		MoreArrayFun morearrayfun = new MoreArrayFun();
 		morearrayfun.printArray(morearrayfun.colors);
 		morearrayfun.printReverseArray(morearrayfun.colors);
