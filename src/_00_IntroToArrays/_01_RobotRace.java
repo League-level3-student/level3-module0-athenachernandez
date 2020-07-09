@@ -29,45 +29,45 @@ public class _01_RobotRace {
 		
 		// 6. use a while loop to repeat step 5 until a robot has reached the top of the
 		// screen.
-		//boolean robotsInGame = true;
-		//int winner = 0;
-		//while (robotsInGame) {
-			//for (int i = 0; i < robots.length; i++) {
-				//if (robots[i].getY() < 0) {
-					//break;
-				//} else {
-					//winner = i;
-				//}
-			//}
+		boolean robotsInGame = true;
+		int winner = 0;
+		while (robotsInGame) {
+			for (int i = 0; i < robots.length; i++) {
+			if (robots[i].getY() < 0) {
+					break;
+				} else {
+					winner = i;
+				}
+			}
 			
-		//}
+		}
 			
 
 		// 7. declare that robot the winner and throw it a party!
-		//JOptionPane.showMessageDialog(null, "Robot #" + winner + " is the winner!");
+		JOptionPane.showMessageDialog(null, "Robot #" + winner + " is the winner!");
 		
 		
 		// 8. try different races with different amounts of robots.
 
 		// 9. make the robots race around a circular track.
-		int winner = 0;
-		boolean moving = true;
-		int[] degrees = new int[8];
-		while (moving) {
-			for (int i = 0; i < robots.length; i++) {
-				for (int j = 0; j < random.nextInt(100); j++) {
-					robots[i].move(1);
-					robots[i].turn(1);
-					degrees[i] += 1;
-					
-					if(degrees[i] == 360) {
-						winner = i;
-						moving = false;
-						break;
-					}
-				}
-			}
-		}
-		JOptionPane.showMessageDialog(null, "Robot #" + winner + " is the winner!");
+//		int winner = 0;
+//		boolean moving = true;
+//		int[] degrees = new int[8];
+//		while (moving) {
+//			for (int i = 0; i < robots.length; i++) {
+//				for (int j = 0; j < random.nextInt(100); j++) {
+//					robots[i].move(1);
+//					robots[i].turn(1);
+//					degrees[i] += 1;
+//					
+//					if(degrees[i] == 360) {
+//						winner = i;
+//						moving = false;
+//						break;
+//					}
+//				}
+//			}
+//		}
+	//	JOptionPane.showMessageDialog(null, "Robot #" + winner + " is the winner!");
 	}
 }
